@@ -74,6 +74,8 @@ function testX3() {
   let result = a.join('') === b.join('')
   return (
     console.log(`Массив длины ${a.length}. Результат - ` + (result ? 'Успешно!' : 'Неудача!')),
+    console.log(`Исходная сторка: ${a.join('')}`),
+    console.log(`Сжатая сторка: ${enCode(a)}`),
     compression(a, b)
   )
 }
