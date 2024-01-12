@@ -11,8 +11,6 @@ function generateArray(min, max, n){
   let arr = []
   let start = 0
 
-  if(!max) return arr.push(min)
-
   if(!n){
     n = 1
     while(start < n){
